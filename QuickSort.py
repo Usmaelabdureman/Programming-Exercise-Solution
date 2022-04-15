@@ -31,6 +31,8 @@ def partition(list, low, high, pivot):
             list[low], list[high] = list[high], list[low]
             low += 1
             high -=1
+        else:
+            break
     return low
 
 def test():
