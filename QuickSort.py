@@ -7,7 +7,7 @@ def QuickSortHlper(list,low,high):
     if len(list)==1:
         return list
 
-    if low< high:
+    if low < high:
         pivot= get_median([list[low], list[high], list[(high+low)//2]])
         pivotIndex = partition(list,low,high,pivot)
         QuickSortHlper(list,low,pivotIndex-1)
